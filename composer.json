@@ -7,14 +7,20 @@
         "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "doctrine/dbal": "^3",
+        "doctrine/doctrine-bundle": "^2.11",
+        "doctrine/doctrine-migrations-bundle": "^3.3",
+        "doctrine/orm": "^3.0",
+        "jms/serializer-bundle": "^5.4",
+        "lexik/jwt-authentication-bundle": "^2.20",
         "symfony/console": "7.0.*",
         "symfony/dotenv": "7.0.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "7.0.*",
         "symfony/runtime": "7.0.*",
+        "symfony/security-bundle": "7.0.*",
+        "symfony/serializer": "7.0.*",
         "symfony/yaml": "7.0.*"
-    },
-    "require-dev": {
     },
     "config": {
         "allow-plugins": {
@@ -62,7 +68,13 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "7.0.*"
+            "require": "7.0.*",
+            "docker": false
         }
+    },
+    "require-dev": {
+        "symfony/maker-bundle": "^1.55",
+        "symfony/stopwatch": "7.0.*",
+        "symfony/web-profiler-bundle": "7.0.*"
     }
 }
